@@ -1,0 +1,289 @@
+* {
+  font-family: "Pirata One", cursive;
+  color: #f8f1c1;
+}
+.image {
+  float: left;
+  margin: auto;
+  height: auto;
+}
+
+.hborder {
+  color: white;
+  border: 2px solid #c9a45c;
+  box-shadow: 0 0 15px rgba(201, 164, 92, 0.5);
+  border-radius: 100px;
+  padding: 5px;
+  text-align: center;
+  margin: 0px 100;
+}
+
+table {
+  padding: 0;
+}
+
+.link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c9a45c;
+  border-color: gold;
+}
+
+fieldset {
+  margin: 20px;
+}
+#surename {
+  margin: 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin: 20px auto;
+  position: sticky;
+  top: 0px;
+  border: 3px solid #c9a45c;
+  border-radius: 100px;
+  box-shadow: 0 0 15px rgba(201, 164, 92, 0.5);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3px;
+}
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  color: white;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav li {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 30px;
+  color: white;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+body {
+  background-image: url("bgbar.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #c9a45c;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+th,
+td {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(201, 164, 92, 0.3);
+}
+
+.photos {
+  text-align: center;
+  padding: 3px;
+}
+
+#pirate1 {
+  border: 2px solid #c9a45c;
+  margin: 4px;
+  box-shadow: 0 0 15px rgba(201, 164, 92, 0.5);
+}
+
+#pirate2 {
+  border: 2px solid #c9a45c;
+  margin: 4px;
+  box-shadow: 0 0 15px rgba(201, 164, 92, 0.5);
+}
+
+#pirate3 {
+  border: 2px solid #c9a45c;
+  margin: 4px;
+  box-shadow: 0 0 15px rgba(201, 164, 92, 0.5);
+}
+
+#history {
+  color: white;
+  border: 2px solid #c9a45c;
+  box-shadow: 0 0 15px rgba(201, 164, 92, 0.5);
+  border-radius: 100px;
+  padding: 5px;
+  text-align: center;
+  margin: 0px 100;
+}
+
+#prgrph {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  border: 1;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.col-lg-6 {
+  color: white;
+}
+
+.footer-bar {
+  background: black;
+  color: #f8f1c1;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-bar a {
+  color: #f8f1c1;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bar a:hover {
+  text-decoration: underline;
+}
+
+.rainbow-text {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 80px;
+  border-collapse: collapse;
+  background: #111;
+  color: white;
+}
+
+.container::before {
+  padding: 1em;
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  background: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 400% 400%;
+  animation: rainbow 6s linear infinite;
+  border-radius: 8px;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.containerr {
+  position: relative;
+  margin: 20px auto;
+  padding: 1em;
+  background: #111;
+  color: white;
+  max-width: 1300px;
+}
+
+.containerr::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  background: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 400% 400%;
+  animation: rainbow 6s linear infinite;
+  border-radius: 12px;
+}
+
+.footer-bar {
+  background: black;
+  color: #f8f1c1;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-bar a {
+  color: #f8f1c1;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bar a:hover {
+  text-decoration: underline;
+}

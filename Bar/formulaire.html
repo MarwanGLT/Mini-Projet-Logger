@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>L'ancre Noire</title>
+    <link rel="stylesheet" href="formulaire.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="image">
+        <a href="index.php">
+          <img src="ancrenoir.png" width="100" height="100" alt="Logo" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.php" class="link">Menu</a></li>
+        <li><a href="nouveaute.html" class="link">Nouveautés</a></li>
+        <li><a href="apropos.html" class="link" id="propos">À propos</a></li>
+        <li><a href="quizz.html" class="link">Quizz</a></li>
+      </ul>
+    </nav>
+    <form action="formulaire.php" method="POST">
+      <fieldset class="field">
+        <legend>Formulaire :</legend>
+        <label for="nom">Votre Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre Nom" />
+        <br />
+        <label for="prenom">Votre Prénom :</label>
+        <input
+          type="text"
+          id="surename"
+          name="prenom"
+          placeholder="Votre Prénom"
+        />
+        <br />
+        <label for="age">Votre Âge :</label>
+        <input type="number" id="age" name="age" placeholder="Votre Âge" />
+        <br />
+        <label for="sexe">Votre Sexe :</label>
+        <input type="text" id="sexe" name="sexe" placeholder="Homme/Femme" />
+        <br />
+        <label for="note"
+          >Quelle note attriburiez vous à l'ambiance du bar sur /5 ?
+        </label>
+        <input type="number" id="note" name="note" placeholder="../5 ?" />
+        <br />
+        <label for="suggestion">Quelques suggestions ?</label>
+        <input
+          type="text"
+          id="suggestion"
+          name="suggestion"
+          placeholder="Faites place à vos idées !"
+        />
+      </fieldset>
+      <button type="submit" class="btn-submit">Envoyer le formulaire</button>
+    </form>
+    <footer class="footer-bar">
+      <p>© 2024 L'Ancre Noire, Tous droits réservés.</p>
+      <p>
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </p>
+    </footer>
+  </body>
+</html>
