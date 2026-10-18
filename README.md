@@ -1,4 +1,36 @@
-# MiniTwit (PHP) — AUCUN LOG (Starter pour exercice de LOG)
+# Mini-Projet-Logger : journalisation d'une application web PHP
+
+Projet réalisé en BTS SIO. Le point de départ est un mini réseau social en PHP (« MiniTwit ») fourni **sans aucun journal**. Mon travail : y ajouter une journalisation des actions sensibles, pour pouvoir retracer qui a fait quoi, quand et depuis où.
+
+## Ce que j'ai ajouté
+
+- Une fonction `write_log()` (fichier `logger.php`) qui écrit chaque événement dans `app.log`.
+- Chaque ligne contient : **date et heure, adresse IP, type d'action, niveau, utilisateur, message**.
+- Les actions tracées : inscription, connexion, déconnexion, publication, modification du profil, abonnement et désabonnement.
+
+Extrait de `app.log` :
+
+```
+2026-09-24 15:27:12 | [::1] | [INSCR] | [INFO] | [chaumes] | [Nouvelle inscription de : chaumes]
+2026-09-24 15:27:29 | [::1] | [FLW] | [INFO] | [chaumes] | [S'est abonné(e) à Marwan]
+2026-09-24 15:28:26 | [::1] | [LOGIN] | [INFO] | [azerty] | [Connexion réussie]
+```
+
+## Pourquoi c'est utile
+
+Sans journal, une connexion frauduleuse ou une action malveillante ne laisse aucune trace. Ces journaux sont la base pour détecter une anomalie, et ils peuvent ensuite être envoyés vers un serveur central : voir mon projet [centralisation-logs-rsyslog](https://github.com/MarwanGLT/centralisation-logs-rsyslog).
+
+## Pistes d'amélioration
+
+- Utiliser les niveaux WARNING et ERROR (par exemple pour les échecs de connexion).
+- Ajouter un identifiant de corrélation par requête.
+- Envoyer les journaux vers syslog plutôt qu'un fichier local.
+
+---
+
+## Énoncé d'origine du starter
+
+### MiniTwit (PHP) — AUCUN LOG (Starter pour exercice de LOG)
 
 Ce mini-twitter *ne log rien* volontairement, afin que vos étudiant·e·s ajoutent ensuite une stratégie de logging (fichiers, BDD, syslog, Monolog, etc.).
 
